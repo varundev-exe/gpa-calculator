@@ -1,147 +1,197 @@
-# GradeTrack — CGPA Calculator & Analytics
+<div align="center">
 
-> A sleek, dark-themed CGPA calculator with multi-scale grading support, grade prediction, and real-time analytics — built with vanilla HTML, CSS, and JavaScript.
+# 📊 GradeTrack
 
-![Version](https://img.shields.io/badge/version-2.0.0-c8f04a?style=flat-square)
-![License](https://img.shields.io/badge/license-MIT-5b9cf6?style=flat-square)
-![Built With](https://img.shields.io/badge/built%20with-HTML%20%7C%20CSS%20%7C%20JS-a78bfa?style=flat-square)
+**A clean, multi-scale GPA & CGPA calculator for students**
 
----
+[![Made with HTML](https://img.shields.io/badge/HTML-5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS-3-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![Chart.js](https://img.shields.io/badge/Chart.js-4.x-FF6384?logo=chartdotjs&logoColor=white)](https://www.chartjs.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?logo=vercel)](https://gpa-calculator-ecru.vercel.app)
 
-## 📸 Overview
+[🔗 Live Demo](https://gpa-calculator-ecru.vercel.app) · [🐛 Report a Bug](https://github.com/varundev-exe/gpa-calculator/issues) · [✨ Request a Feature](https://github.com/varundev-exe/gpa-calculator/issues)
 
-GradeTrack helps students accurately calculate their SGPA and CGPA, visualise subject performance, and predict the grades they need to hit their academic targets — all in a fast, no-install, browser-based tool.
-
----
-
-## ✨ Features
-
-### Core
-- **SGPA & CGPA calculation** — credit-weighted computation with live updates as you type
-- **Previous semester tracking** — add past semesters by SGPA + credits to factor into your overall CGPA
-- **Percentage equivalent** — auto-converted using the formula appropriate to your grading scale
-- **Grade class label** — Outstanding / Excellent / First Class / Second Class / Pass / Fail
-
-### 🌐 Multiple Grading Scales *(v2.0)*
-Switch between three grading systems from the header dropdown — the entire app recalculates instantly:
-
-| Scale | Grades | Max |
-|---|---|---|
-| **India 10-pt** | O / A+ / A / B+ / B / C / F | 10.0 |
-| **US 4.0** | A / A- / B+ / B / B- / C+ / C / C- / D / F | 4.0 |
-| **UK Honours** | First / 2:1 / 2:2 / Third / Fail | 10.0 |
-
-### 🎯 Grade Predictor *(v2.0)*
-Enter your **target CGPA** and **remaining credits** — the predictor instantly shows:
-- The minimum SGPA you need across remaining semesters
-- The closest grade label that achieves it (e.g. *"You need at least 'A+' average"*)
-- A clear warning if the target is mathematically out of reach
-
-### 📊 Visual Analytics
-- **Bar chart** — grade points per subject, colour-coded by performance
-- **Doughnut chart** — credit distribution across subjects
-- **CGPA progress bar** — animated fill relative to the scale maximum
-
-### 🛠 Utilities
-- **Export JSON** — save your subjects and semester history as a `.json` file
-- **Load sample data** — one-click demo to explore the UI
-- **Clear all** — reset everything with confirmation
-- Fully **responsive** — works on mobile and desktop
+</div>
 
 ---
 
-## 🚀 Getting Started
+## Overview
 
-No build tools, no dependencies to install. Just open the file.
+GradeTrack is a browser-based tool that lets students calculate their **Semester GPA (SGPA)** and **Cumulative GPA (CGPA)** across multiple grading systems. Add your subjects, enter credits and grade points, and get instant results with visualizations — no account, no backend, no setup required.
+
+> Built as a first-year college project using vanilla HTML, CSS, and JavaScript.
+
+---
+
+## Features
+
+- **SGPA & CGPA Calculation** — Add subjects dynamically with name, credit hours, and grade point
+- **Multi-Scale Support** — Switch between three grading systems:
+  - 🇮🇳 India 10-Point Scale
+  - 🇺🇸 US 4.0 Scale
+  - 🇬🇧 UK Honours Classification
+- **Grade Predictor** — Enter a target CGPA and see the minimum grade point needed in upcoming semesters
+- **Previous Semesters Tracker** — Log past semester GPAs to compute a running CGPA
+- **Visual Charts** — Bar chart (per-subject grade points) and doughnut chart (grade distribution) via Chart.js
+- **Export to JSON** — Download your session data as a `.json` file for records
+- **Load Sample Data** — One-click demo to explore features without manual entry
+- **Responsive Design** — Works on desktop and mobile
+
+---
+
+## Screenshot
+
+> _Add a screenshot or GIF of the app here once you have one. A quick screen recording showing grade entry → calculation → chart update works great._
+>
+> `![GradeTrack Demo](assets/demo.png)`
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+No installations or dependencies needed. Just a modern browser.
+
+### Run Locally
 
 ```bash
-git clone https://github.com/your-username/gradetrack.git
-cd gradetrack
-open index.html      # macOS
-# or double-click index.html on Windows / Linux
+# 1. Clone the repository
+git clone https://github.com/varundev-exe/gpa-calculator.git
+
+# 2. Open the project folder
+cd gpa-calculator
+
+# 3. Open index.html in your browser
+#    On macOS:
+open index.html
+#    On Linux:
+xdg-open index.html
+#    On Windows: double-click index.html in File Explorer
 ```
 
-That's it — the calculator runs entirely in the browser.
+Or use the [Live Demo](https://gpa-calculator-ecru.vercel.app) directly — no setup needed.
 
-### File Structure
+---
+
+## How to Use
+
+1. **Select a grading scale** from the dropdown at the top
+2. **Add subjects** using the `+ Add Subject` button
+3. Enter each subject's **name**, **credit hours**, and **grade point**
+4. Hit **Recalculate** to see your SGPA and updated CGPA
+5. Use the **Previous Semesters** section to track past semesters for a cumulative CGPA
+6. Try the **Grade Predictor** by entering a target CGPA — it tells you the minimum score needed
+7. **Export** your data as JSON for safekeeping, or **Clear All** to start fresh
+
+---
+
+## How the Math Works
+
+### SGPA (Semester Grade Point Average)
+
+$$\text{SGPA} = \frac{\sum(\text{Grade Point}_i \times \text{Credits}_i)}{\sum \text{Credits}_i}$$
+
+Each subject's grade point is weighted by its credit hours, then divided by the total credits.
+
+### CGPA (Cumulative GPA across semesters)
+
+$$\text{CGPA} = \frac{\sum(\text{SGPA}_i \times \text{Credits}_i)}{\sum \text{Credits}_i}$$
+
+Each semester's SGPA is weighted by the total credits of that semester.
+
+### Grade Predictor
+
+Rearranging the CGPA formula for the required score in future semesters:
+
+$$\text{Required Score} = \frac{(\text{Target CGPA} \times \text{Total Future Credits}) - \sum(\text{Past SGPA}_i \times \text{Past Credits}_i)}{\text{Remaining Credits}}$$
+
+---
+
+## Grading Scales Reference
+
+| Scale | Max | Description |
+|-------|-----|-------------|
+| India 10-Point | 10.0 | Most Indian universities (UGC/AICTE) |
+| US 4.0 | 4.0 | Standard US college GPA |
+| UK Honours | 4.0 (mapped) | First / 2:1 / 2:2 / Third |
+
+---
+
+## Tech Stack
+
+| Technology | Purpose |
+|------------|---------|
+| HTML5 | Structure and markup |
+| CSS3 | Styling and responsive layout |
+| JavaScript (ES6) | All calculation logic and DOM manipulation |
+| [Chart.js](https://www.chartjs.org/) | Bar and doughnut charts |
+| [Google Fonts – Syne](https://fonts.google.com/specimen/Syne) | Heading typography |
+| [Google Fonts – DM Mono](https://fonts.google.com/specimen/DM+Mono) | Monospace / numeric display |
+
+---
+
+## File Structure
 
 ```
-gradetrack/
-├── index.html      # Markup + styles
-├── script.js       # All application logic
+gpa-calculator/
+├── index.html      # Main app — markup and embedded styles
+├── script.js       # All calculation and interaction logic
+├── .gitignore
+├── LICENSE
 └── README.md
 ```
 
 ---
 
-## 🧮 How the Math Works
+## Roadmap
 
-**SGPA** (current semester):
-```
-SGPA = Σ(grade_point × credits) / Σ(credits)
-```
-
-**CGPA** (across all semesters):
-```
-CGPA = Σ(SGPA_i × credits_i) / Σ(credits_i)
-```
-
-**Percentage conversion** (India 10-pt scale):
-```
-Percentage ≈ (CGPA − 0.75) × 10
-```
-
-**Grade Predictor** — minimum SGPA needed:
-```
-required_SGPA = (target_CGPA × total_credits_after − current_weighted_points) / remaining_credits
-```
-
----
-
-## 🎨 Tech Stack
-
-| Layer | Technology |
-|---|---|
-| Markup | HTML5 |
-| Styling | CSS3 (custom properties, grid, flexbox) |
-| Logic | Vanilla JavaScript (ES6+) |
-| Charts | [Chart.js 4.4](https://www.chartjs.org/) via CDN |
-| Fonts | [Syne](https://fonts.google.com/specimen/Syne) + [DM Mono](https://fonts.google.com/specimen/DM+Mono) via Google Fonts |
-
-Zero frameworks. Zero build steps.
-
----
-
-## 🗺 Roadmap
-
-- [ ] `localStorage` persistence — save data between sessions
-- [ ] Export as PDF / printable transcript
-- [ ] University preset templates (Anna University, VTU, Mumbai University…)
-- [ ] Semester-wise GPA trend line chart
-- [ ] Backlog / arrear impact calculator
+- [x] SGPA & CGPA calculation
+- [x] Multiple grading scale support
+- [x] Grade predictor
+- [x] Chart visualizations (bar + doughnut)
+- [x] JSON export
+- [x] Previous semesters tracker
+- [ ] `localStorage` persistence (data survives page refresh)
+- [ ] Import from JSON
+- [ ] CGPA trend line chart across semesters
+- [ ] PDF / image export of results
 - [ ] Dark / light theme toggle
-- [ ] Import JSON to restore a previous session
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
-Contributions are welcome!
+Contributions, bug reports, and feature suggestions are all welcome!
 
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/your-feature`
-3. Commit your changes: `git commit -m 'Add your feature'`
-4. Push to the branch: `git push origin feature/your-feature`
-5. Open a Pull Request
+```bash
+# 1. Fork the repository
+# 2. Create a new branch
+git checkout -b feature/your-feature-name
+
+# 3. Make your changes and commit
+git commit -m "Add: your feature description"
+
+# 4. Push to your fork
+git push origin feature/your-feature-name
+
+# 5. Open a Pull Request on GitHub
+```
 
 Please keep PRs focused — one feature or fix per PR makes review much easier.
 
 ---
 
-## 📄 License
+## License
 
-This project is licensed under the [MIT License](LICENSE).
+Distributed under the MIT License. See [`LICENSE`](LICENSE) for details.
 
 ---
 
-> Made for students, by a student. If GradeTrack helped you, leave a ⭐ on the repo!
+<div align="center">
+
+Made by [Varun](https://github.com/varundev-exe) · ⭐ Star the repo if you found it useful!
+
+</div>
