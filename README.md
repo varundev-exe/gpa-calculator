@@ -19,7 +19,7 @@
 
 ## Overview
 
-GradeTrack is a browser-based tool that lets students calculate their **Semester GPA (SGPA)** and **Cumulative GPA (CGPA)** across multiple grading systems. Add your subjects, enter credits and grades, and get instant calculations with visual charts.
+GradeTrack is a browser-based tool that lets students calculate their **Semester GPA (SGPA)** and **Cumulative GPA (CGPA)** across multiple grading systems. Add your subjects, enter credits and grades, and instantly see your performance metrics.
 
 > Built as a first-year college project using vanilla HTML, CSS, and JavaScript.
 
@@ -44,16 +44,16 @@ GradeTrack is a browser-based tool that lets students calculate their **Semester
 ## Screenshots
 
 ### Main Calculator Interface
-![GradeTrack Main Calculator showing CGPA of 8.63 with current semester subjects including Calculus, Data Structure, Physics, Python, and Chemistry with a bar chart showing grade points by subject](https://github.com/varundev-exe/gpa-calculator/assets/image1.png)
+![GradeTrack Main Calculator showing CGPA of 8.63 with current semester subjects including Calculus, Data Structure, Physics, Python, and Chemistry with a bar chart showing grade points by subject](./1775499890065.jpeg)
 
 ### Grade Calculation and Predictor
-![GradeTrack showing detailed SGPA calculation view with grade predictor showing target CGPA of 9 and minimum required SGPA of 9.66 for remaining 23 credits](https://github.com/varundev-exe/gpa-calculator/assets/image2.png)
+![GradeTrack showing detailed SGPA calculation view with grade predictor showing target CGPA of 9 and minimum required SGPA of 9.66 for remaining 23 credits](./1775499891047.jpeg)
 
 ### Credit Distribution Chart
-![GradeTrack displaying credit distribution doughnut chart showing how credits are distributed across all subjects - Calculus, Data Structure, Physics, Python, and Chemistry](https://github.com/varundev-exe/gpa-calculator/assets/image3.png)
+![GradeTrack displaying credit distribution doughnut chart showing how credits are distributed across all subjects - Calculus, Data Structure, Physics, Python, and Chemistry](./1775499891405.jpeg)
 
 ### Full Dashboard View
-![GradeTrack full dashboard with all sections visible - header, current semester subjects table, CGPA progress bar, grade predictor, and analytics charts](https://github.com/varundev-exe/gpa-calculator/assets/image4.png)
+![GradeTrack full dashboard with all sections visible - header, current semester subjects table, CGPA progress bar, grade predictor, and analytics charts](./%231775499891405%20%281%29.jpeg)
 
 ---
 
