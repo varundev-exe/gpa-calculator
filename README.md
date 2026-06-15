@@ -2,7 +2,7 @@
 
 # 📊 GradeTrack
 
-**A clean, multi-scale GPA & CGPA calculator for students and all**
+**A clean, multi-scale GPA & CGPA calculator for students**
 
 [![Made with HTML](https://img.shields.io/badge/HTML-5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS-3-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
