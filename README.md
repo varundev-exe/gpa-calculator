@@ -1,6 +1,6 @@
 <div align="center">
 
-# 📊 GradeTracklol
+# 📊 GradeTrack
 
 **A clean, multi-scale GPA & CGPA calculator for students**
 
